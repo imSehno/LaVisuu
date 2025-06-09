@@ -7,6 +7,10 @@ app = Flask(__name__, template_folder="templates", static_folder="static")
 app.secret_key = os.getenv("FLASK_SECRET", "change_this_secret")
 CORS(app)
 
+git add requirements.txt
+git commit -m "Ajout du fichier requirements.txt"
+git push
+
 KEYS_FILE = "keys.json"
 ADMIN_PASS = os.getenv("ADMIN_PASS", "monmotdepasse")
 
