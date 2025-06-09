@@ -65,3 +65,4 @@ def admin():
                 keys[k] = not keys[k]
         save_keys(keys)
     return render_template("admin.html", keys=keys)
+    if __name__ == '__main__':     app.run()
